@@ -1,0 +1,16 @@
+curl 'http://192.168.2.156/config/batteries' \
+  -H 'Connection: keep-alive' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'DNT: 1' \
+  -H 'Authorization: Digest username="customer", realm="Webinterface area", nonce="60d1e63c:b2692f1f9ae511bf329e4dcd8e969757", uri="/config/batteries", response="20ed81891764aa0b48f859119d236530", qop=auth, nc=00000007, cnonce="2f,8e,57,bc,34,2e,e6,eb"' \
+  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36' \
+  -H 'Content-Type: application/json' \
+  -H 'Origin: http://192.168.2.156' \
+  -H 'Referer: http://192.168.2.156/' \
+  -H 'Accept-Language: de-DE,de;q=0.9,en-DE;q=0.8,en;q=0.7,en-US;q=0.6,sk;q=0.5,es;q=0.4' \
+  --data-raw '{"HYB_EM_POWER":-10000,"HYB_EM_MODE":1}' \
+  --compressed \
+  --insecure
+  
+  
+  
